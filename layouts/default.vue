@@ -5,6 +5,7 @@
         <nuxt />
       </v-container>
     </v-main>
+    <FooterApp />
     <v-footer :absolute="!fixed" app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
@@ -12,7 +13,11 @@
 </template>
 
 <script>
+import FooterApp from "@/components/FooterApp";
 export default {
+  components: {
+    FooterApp
+  },
   data() {
     return {
       clipped: false,
