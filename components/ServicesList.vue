@@ -1,0 +1,44 @@
+<template>
+  <section >
+    <div  v-for="serv in services" :key=serv.id>
+    <Service  :item="serv" />  
+    </div>
+  </section>
+</template>
+
+<script>
+  import Service from "@/components/Service";
+  export default {
+    props: {
+      services: {
+        default: () => [
+          {
+            id: 'agenda',
+            img: 'calendar',
+            route: 'agenda',
+            title: 'Agende seu horario'
+          },
+          {
+            id: 'consulta',
+            img: 'consulta',
+            route: 'consulta',
+            title: 'Consulte o status'
+          },
+          {
+            id: 'catalogo',
+            img: 'catalogo',
+            route: 'catalogo',
+            title: 'Veja o catalogo'
+          }, 
+      ]
+    },
+  },
+  components: {
+    Service
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+
+</style>

@@ -2,7 +2,7 @@
   <div class="divider">
     <h2>
         <span>
-        Serviços
+          {{title}}
         </span>
     </h2>
   </div>
@@ -10,7 +10,9 @@
 
 <script>
     export default {
-        
+      props: {
+        title:{ default: () => "Serviços"}
+      }
     }
 </script>
 
