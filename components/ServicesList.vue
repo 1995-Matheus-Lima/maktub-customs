@@ -16,19 +16,19 @@
         default: () => [
           {
             id: 'agenda',
-            img: 'calentar',
+            img: 'mdi-calendar',
             route: 'agenda',
             title: 'Agende seu horario'
           },
           {
             id: 'consulta',
-            img: 'consulta',
+            img: 'mdi-book-search-outline',
             route: 'consulta',
             title: 'Consulte o status'
           },
           {
             id: 'catalogo',
-            img: 'catalogo',
+            img: 'mdi-newspaper-variant-multiple',
             route: 'catalogo',
             title: 'Veja o catalogo'
           }, 

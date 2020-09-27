@@ -1,7 +1,7 @@
 
 <template >
   <div class="item">
-    <img :src="`service/${item.img}`" />
+    <v-icon class="icon">{{item.img}}</v-icon>
     <h3>{{item.title}}</h3>
     <h4></h4>
     <NuxtLink :to="`/${item.route}`">
@@ -36,9 +36,9 @@
     border-left: 1px solid #bdbdbd57;
     box-shadow: 2px 2px 3px 0px #25252570;
   }
-  img{
-    width:100px;
-    height:100px;
+  .icon {
+    font-size: 56px;
+    color: #E49061
   }
   template::before,template::after{
     contain:"";
