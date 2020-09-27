@@ -2,8 +2,6 @@
 <section>
   <Divider />
   <ServicesList />
-
-  
 </section>
 </template>
 
