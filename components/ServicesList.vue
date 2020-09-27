@@ -4,12 +4,14 @@
       <div  v-for="serv in services" :key=serv.id>
         <Service  :item="serv" />  
       </div>
+      <WhatsappContact />
     </div>
   </section>
 </template>
 
 <script>
   import Service from "@/components/Service";
+  import Whats from "@/components/Whats";
   export default {
     props: {
       services: {
@@ -39,7 +41,8 @@
     },
   },
   components: {
-    Service
+    Service, 
+    Whats
   }
 }
 </script>
