@@ -1,7 +1,9 @@
 <template>
   <section >
-    <div  v-for="serv in services" :key=serv.id>
-    <Service  :item="serv" />  
+    <div >
+      <div  v-for="serv in services" :key=serv.id>
+      <Service  :item="serv" />  
+      </div>
     </div>
   </section>
 </template>
@@ -14,7 +16,7 @@
         default: () => [
           {
             id: 'agenda',
-            img: 'calendar',
+            img: 'calentar',
             route: 'agenda',
             title: 'Agende seu horario'
           },
@@ -38,7 +40,7 @@
   }
 }
 </script>
-
+  
 <style lang="scss" scoped>
 
 </style>

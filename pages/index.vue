@@ -16,7 +16,6 @@ export default {
   components: {
     Divider,
     ServicesList,
-
   }
 };
 </script>

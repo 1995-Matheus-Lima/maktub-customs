@@ -1,12 +1,15 @@
-<template>
-   <div class="item">
-        <img :src="`/services/${item.img}`" />
-        <h3>{{item.title}}</h3>
-        <h4></h4>
-        <NuxtLink :to="`/${item.route}`">
-          <button class="multi-item">View Item ></button>
-        </NuxtLink>
-      </div>
+
+<template >
+  <div class="container-item">
+    <div class="item">
+      <img :src="`service/${item.img}`" />
+      <h3>{{item.title}}</h3>
+      <h4></h4>
+      <NuxtLink :to="`/${item.route}`">
+        <button class="multi-item">  View Item </button>
+      </NuxtLink>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -24,5 +27,40 @@
 </script>
 
 <style lang="scss" scoped>
-
+  .container-item{
+    width:960px;
+    margin: 0 auto;
+  }
+  .item{
+    box-sizing:border-box;
+    width:300px;
+    height:250px;
+    margin:40px 20px 40px 0;
+    float:left;
+    text-align:center;
+    padding:20px;
+    border: 1px solid rgba(000,000,000,.3);
+    box-shadow: 1px 1px 1px #252525;
+  }
+  img{
+    width:100px;
+    height:100px;
+  }
+  template::before,template::after{
+    contain:"";
+    display:table;
+    clear:both
+  }
+  .multi-item{
+    border: 1px solid ;
+    border-radius: 20%;
+    padding:5px 10px;
+    color:#252525;
+    margin-top:20px;
+    
+  }
+  .multi-item:hover{
+     color:#E49061;
+   }
+  
 </style>
