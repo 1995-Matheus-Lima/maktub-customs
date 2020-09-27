@@ -44,8 +44,8 @@ export default {
 }
 .masthead {
   text-align: center;
-  width: 55%;
-  height: 300px; /* if you don't want it to take up the full screen, reduce this number */
+  width: 50%;
+  height: 120px;
   overflow: hidden;
   background-size: cover !important;
   background: linear-gradient(
@@ -55,13 +55,25 @@ export default {
       rgba(92, 81, 81, 0.65) 100%
     ),
     url(~assets/coupe-1374450_1920.jpg) no-repeat center center scroll;
+  
+  @media screen and (min-width: 768px) {
+    width: 55%;
+    height: 300px; /* if you don't want it to take up the full screen, reduce this number */  
+  }
 }
 .logo-placement {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  flex-flow: column;
+  width: 50%;
   padding: 10px;
-  width: 40%;
+
+  @media screen and (min-width: 768px) {
+    flex-flow: row;
+    width: 40%;
+  }
+
   h1 {
     font-family: "Montez", cursive;
     font-style: normal;
@@ -76,8 +88,11 @@ export default {
     .customs {
       font-family: 'Montserrat', sans-serif;
       font-weight: 300;
-      font-size: medium;
+      font-size: small;
       text-align: initial;
+      @media screen and (min-width: 768px) {
+        font-size: medium;
+      }
     }
   }
 }
