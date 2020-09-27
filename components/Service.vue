@@ -33,7 +33,7 @@
     text-align:center;
     padding:20px;
     border: 1px solid rgba(000,000,000,.3);
-    box-shadow: 1px 1px 1px #252525;
+    box-shadow: 2px 2px 3px 0px #25252570;
   }
   img{
     width:100px;
