@@ -1,8 +1,8 @@
 <template>
   <section >
-    <div >
+    <div class="container-item">
       <div  v-for="serv in services" :key=serv.id>
-      <Service  :item="serv" />  
+        <Service  :item="serv" />  
       </div>
     </div>
   </section>
@@ -42,5 +42,11 @@
 </script>
   
 <style lang="scss" scoped>
+ .container-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+  }
 
 </style>

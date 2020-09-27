@@ -1,14 +1,12 @@
 
 <template >
-  <div class="container-item">
-    <div class="item">
-      <img :src="`service/${item.img}`" />
-      <h3>{{item.title}}</h3>
-      <h4></h4>
-      <NuxtLink :to="`/${item.route}`">
-        <button class="multi-item">  View Item </button>
-      </NuxtLink>
-    </div>
+  <div class="item">
+    <img :src="`service/${item.img}`" />
+    <h3>{{item.title}}</h3>
+    <h4></h4>
+    <NuxtLink :to="`/${item.route}`">
+      <button class="multi-item">  View Item </button>
+    </NuxtLink>
   </div>
 </template>
 
@@ -27,16 +25,11 @@
 </script>
 
 <style lang="scss" scoped>
-  .container-item{
-    width:960px;
-    margin: 0 auto;
-  }
   .item{
     box-sizing:border-box;
     width:300px;
     height:250px;
     margin:40px 20px 40px 0;
-    float:left;
     text-align:center;
     padding:20px;
     border: 1px solid rgba(000,000,000,.3);
