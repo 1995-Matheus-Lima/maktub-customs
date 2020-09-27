@@ -19,7 +19,7 @@
 <style lang="scss" scoped>
 .divider {
   text-align: center;
-  width: 90vw;
+  width: 85vw;
 }
 h2 {
   font-family: "Montserrat", Helvetica, sans-serif;
