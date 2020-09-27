@@ -1,14 +1,11 @@
 
 <template >
-  <div class="container-item">
-    <div class="item">
-      <img :src="`service/${item.img}`" />
-      <h3>{{item.title}}</h3>
-      <h4></h4>
-      <NuxtLink :to="`/${item.route}`">
-        <button class="multi-item">  View Item </button>
-      </NuxtLink>
-    </div>
+  <div class="item">
+    <v-icon class="icon">{{item.img}}</v-icon>
+    <NuxtLink :to="`/${item.route}`">
+      <h3 class="item-link">{{item.title}}</h3>
+    </NuxtLink>
+    <p class="description">{{item.description}}</p>
   </div>
 </template>
 
@@ -27,30 +24,31 @@
 </script>
 
 <style lang="scss" scoped>
-  .container-item{
-    width:960px;
-    margin: 0 auto;
-  }
   .item{
     box-sizing:border-box;
     width:300px;
     height:250px;
     margin:40px 20px 40px 0;
-    float:left;
     text-align:center;
     padding:20px;
-    border: 1px solid rgba(000,000,000,.3);
-    box-shadow: 1px 1px 1px #252525;
+    border-top: 1px solid #bdbdbd57;
+    border-left: 1px solid #bdbdbd57;
+    box-shadow: 2px 2px 3px 0px #25252570;
   }
-  img{
-    width:100px;
-    height:100px;
+  .icon {
+    font-size: 56px;
+    color: #E49061
   }
-  template::before,template::after{
-    contain:"";
-    display:table;
-    clear:both
+  .v-application a {
+    text-decoration: none;
+    color: black;
   }
+
+  .description {
+    text-align: justify;
+    margin-top: 1vmin;
+  }
+    
   .multi-item{
     border: 1px solid ;
     border-radius: 20%;
@@ -59,7 +57,9 @@
     margin-top:20px;
     
   }
-  .multi-item:hover{
+  .multi-item:hover,
+  .item-link:hover
+  {
      color:#E49061;
    }
   
