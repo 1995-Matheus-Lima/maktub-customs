@@ -18,19 +18,22 @@
             id: 'agenda',
             img: 'mdi-calendar',
             route: 'agenda',
-            title: 'Agende seu horario'
+            title: 'Agende seu horario',
+            description: 'Agende seu horario online! The landscape dump braked the mechanical upfitted the work-ready'
           },
           {
             id: 'consulta',
             img: 'mdi-book-search-outline',
             route: 'consulta',
-            title: 'Consulte o status'
+            title: 'Consulte o status',
+            description: 'Seu carro está em nossos cuidados ou pediu um orçamento? Consulte o status do serviço aqui!'
           },
           {
             id: 'catalogo',
             img: 'mdi-newspaper-variant-multiple',
             route: 'catalogo',
-            title: 'Veja o catalogo'
+            title: 'Veja o catalogo',
+            description: 'Procurando inspiração? Dá uma olhadinha no nosso catálogo com essas ideias boooooas'
           }, 
       ]
     },

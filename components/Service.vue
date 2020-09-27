@@ -2,11 +2,10 @@
 <template >
   <div class="item">
     <v-icon class="icon">{{item.img}}</v-icon>
-    <h3>{{item.title}}</h3>
-    <h4></h4>
     <NuxtLink :to="`/${item.route}`">
-      <button class="multi-item">  View Item </button>
+      <h3 class="item-link">{{item.title}}</h3>
     </NuxtLink>
+    <p class="description">{{item.description}}</p>
   </div>
 </template>
 
@@ -40,11 +39,16 @@
     font-size: 56px;
     color: #E49061
   }
-  template::before,template::after{
-    contain:"";
-    display:table;
-    clear:both
+  .v-application a {
+    text-decoration: none;
+    color: black;
   }
+
+  .description {
+    text-align: justify;
+    margin-top: 1vmin;
+  }
+    
   .multi-item{
     border: 1px solid ;
     border-radius: 20%;
@@ -53,7 +57,9 @@
     margin-top:20px;
     
   }
-  .multi-item:hover{
+  .multi-item:hover,
+  .item-link:hover
+  {
      color:#E49061;
    }
   
