@@ -28,7 +28,7 @@
     box-sizing:border-box;
     width:300px;
     height:250px;
-    margin:40px 20px 40px 0;
+    margin-top:40px;
     text-align:center;
     padding:20px;
     border-top: 1px solid #bdbdbd57;
@@ -62,5 +62,4 @@
   {
      color:#E49061;
    }
-  
 </style>
