@@ -32,7 +32,8 @@
     margin:40px 20px 40px 0;
     text-align:center;
     padding:20px;
-    border: 1px solid rgba(000,000,000,.3);
+    border-top: 1px solid #bdbdbd57;
+    border-left: 1px solid #bdbdbd57;
     box-shadow: 2px 2px 3px 0px #25252570;
   }
   img{
