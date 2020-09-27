@@ -10,17 +10,17 @@
 </template>
 
 <script>
-    export default {
-        props:{
-            item:{
-                default: () =>({
-                  img: 'calendar',
-                  route: 'agenda',
-                  title: 'Agende seu horario'
-                })
-            }
-        }
+  export default {
+    props:{
+      item:{
+        default: () =>({
+          img: 'calendar',
+          route: 'agenda',
+          title: 'Agende seu horario'
+        })
+      }
     }
+  }
 </script>
 
 <style lang="scss" scoped>

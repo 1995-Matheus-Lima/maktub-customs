@@ -16,5 +16,9 @@
 </script>
 
 <style lang="scss" scoped>
+    svg {
+      fill: #27cc44;
+      width: 48px;
+    }
 
 </style>
